@@ -17,7 +17,7 @@ A minimal **Kubernetes** deployment that runs a **MongoDB** instance together wi
 
 ```bash
 # Clone the repo (if not already)
-git clone <YOUR_REPO_URL>
+git clone https://github.com/Debashich/k8s-mongo-deployment
 cd k8s-mongo-deployment
 
 # Apply all manifests
@@ -62,5 +62,3 @@ kubectl delete -f mongo-configmap.yml
   ```
 - **Service not reachable** – Ensure `minikube service` is still running; the tunnel must stay open while you use the UI.
 - **Authentication failures** – Verify that the secret keys match the env vars `ME_CONFIG_BASICAUTH_USERNAME` and `ME_CONFIG_BASICAUTH_PASSWORD` in `mongo-express.yml`.
-
----
